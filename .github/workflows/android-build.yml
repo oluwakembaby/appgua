@@ -22,7 +22,7 @@ on:
   workflow_dispatch:
 
 env:
-  FLUTTER_VERSION: '3.32.3'
+  FLUTTER_VERSION: '3.38.5'
   JAVA_VERSION: '17'
 
 jobs:
@@ -99,16 +99,10 @@ jobs:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           # Create key.properties file for Gradle signing configuration
-          cat > android/key.properties <<EOF
-          storePassword=$KEYSTORE_PASSWORD
-          keyPassword=$KEY_PASSWORD
-          keyAlias=$KEY_ALIAS
-          storeFile=$RUNNER_TEMP/release-keystore.jks
-          EOF
-          
-          # Remove leading whitespace from properties file
-          sed -i 's/^[[:space:]]*//' android/key.properties
-          
+          echo "storePassword=$KEYSTORE_PASSWORD" > android/key.properties
+          echo "keyPassword=$KEY_PASSWORD" >> android/key.properties
+          echo "keyAlias=$KEY_ALIAS" >> android/key.properties
+          echo "storeFile=$RUNNER_TEMP/release-keystore.jks" >> android/key.properties
           echo "✓ key.properties created successfully"
 
       # ========================================
