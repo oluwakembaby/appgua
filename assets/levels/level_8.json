@@ -1,0 +1,21 @@
+{
+  "id": 8,
+  "background": "bg_coral.png",
+  "inventory": [
+    {"type": "neon_tetra", "count": 3},
+    {"type": "goldfish", "count": 1},
+    {"type": "rock_mossy", "count": 1}
+  ],
+  "rules": {
+    "neon_tetra": {"target": "neon_tetra", "type": "attraction", "radius": 100},
+    "goldfish": {"target": "rock_mossy", "type": "repulsion", "radius": 120}
+  },
+  "description": "",
+  "timeLimit": 45,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 1,
+    "speed": 50,
+    "scareRadius": 90
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "background": "bg_coral.png",
+  "inventory": [
+    {"type": "neon_tetra", "count": 2},
+    {"type": "betta_fish", "count": 1},
+    {"type": "plant_fern", "count": 2}
+  ],
+  "rules": {
+    "neon_tetra": {"target": "neon_tetra", "type": "attraction", "radius": 130},
+    "betta_fish": {"target": "neon_tetra", "type": "repulsion", "radius": 110}
+  },
+  "description": "",
+  "timeLimit": 55
+}

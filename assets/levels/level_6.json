@@ -1,0 +1,20 @@
+{
+  "id": 6,
+  "background": "bg_shallow.png",
+  "inventory": [
+    {"type": "clown_fish", "count": 2},
+    {"type": "plant_anemone", "count": 2},
+    {"type": "rock_clean", "count": 1}
+  ],
+  "rules": {
+    "clown_fish": {"target": "plant_anemone", "type": "attraction", "radius": 90}
+  },
+  "description": "",
+  "timeLimit": 50,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 1,
+    "speed": 40,
+    "scareRadius": 80
+  }
+}

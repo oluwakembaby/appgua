@@ -1,0 +1,21 @@
+{
+  "id": 9,
+  "background": "bg_shallow.png",
+  "inventory": [
+    {"type": "clown_fish", "count": 2},
+    {"type": "betta_fish", "count": 2},
+    {"type": "plant_anemone", "count": 1}
+  ],
+  "rules": {
+    "clown_fish": {"target": "plant_anemone", "type": "attraction", "radius": 80},
+    "betta_fish": {"target": "betta_fish", "type": "repulsion", "radius": 140}
+  },
+  "description": "",
+  "timeLimit": 40,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 2,
+    "speed": 45,
+    "scareRadius": 85
+  }
+}

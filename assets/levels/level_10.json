@@ -1,0 +1,21 @@
+{
+  "id": 10,
+  "background": "bg_deep.png",
+  "inventory": [
+    {"type": "neon_tetra", "count": 4},
+    {"type": "betta_fish", "count": 1},
+    {"type": "plant_fern", "count": 2}
+  ],
+  "rules": {
+    "neon_tetra": {"target": "neon_tetra", "type": "attraction", "radius": 85},
+    "betta_fish": {"target": "neon_tetra", "type": "repulsion", "radius": 110}
+  },
+  "description": "",
+  "timeLimit": 40,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 2,
+    "speed": 55,
+    "scareRadius": 90
+  }
+}

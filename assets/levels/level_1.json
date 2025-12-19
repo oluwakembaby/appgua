@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "background": "bg_shallow.png",
+  "inventory": [
+    {"type": "neon_tetra", "count": 2},
+    {"type": "plant_fern", "count": 1}
+  ],
+  "rules": {
+    "neon_tetra": {
+      "target": "neon_tetra",
+      "type": "attraction",
+      "radius": 150
+    }
+  },
+  "description": "Neon Tetras love to school together. Keep them close!"
+}
+

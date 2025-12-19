@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "background": "bg_shallow.png",
+  "inventory": [
+    {"type": "clown_fish", "count": 1},
+    {"type": "plant_anemone", "count": 1}
+  ],
+  "rules": {
+    "clown_fish": {
+      "target": "plant_anemone",
+      "type": "attraction",
+      "radius": 100
+    }
+  },
+  "description": "Clownfish feel safe near Anemones."
+}
+

@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "background": "bg_deep.png",
+  "inventory": [
+    {"type": "betta_fish", "count": 2},
+    {"type": "rock_clean", "count": 1}
+  ],
+  "rules": {
+    "betta_fish": {
+      "target": "betta_fish",
+      "type": "repulsion",
+      "radius": 200
+    }
+  },
+  "description": "Bettas are territorial. Keep them far apart!"
+}
+

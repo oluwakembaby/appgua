@@ -1,0 +1,23 @@
+{
+  "id": 12,
+  "background": "bg_shallow.png",
+  "inventory": [
+    {"type": "betta_fish", "count": 2},
+    {"type": "neon_tetra", "count": 3},
+    {"type": "goldfish", "count": 1},
+    {"type": "rock_mossy", "count": 1}
+  ],
+  "rules": {
+    "betta_fish": {"target": "betta_fish", "type": "repulsion", "radius": 130},
+    "neon_tetra": {"target": "neon_tetra", "type": "attraction", "radius": 75},
+    "goldfish": {"target": "rock_mossy", "type": "repulsion", "radius": 90}
+  },
+  "description": "",
+  "timeLimit": 30,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 3,
+    "speed": 50,
+    "scareRadius": 100
+  }
+}

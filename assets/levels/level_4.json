@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "background": "bg_deep.png",
+  "inventory": [
+    {"type": "goldfish", "count": 1},
+    {"type": "rock_mossy", "count": 1},
+    {"type": "plant_fern", "count": 1}
+  ],
+  "rules": {
+    "goldfish": {
+      "target": "rock_mossy",
+      "type": "repulsion",
+      "radius": 140
+    }
+  },
+  "description": "",
+  "timeLimit": 60,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 1,
+    "speed": 30,
+    "scareRadius": 70
+  }
+}

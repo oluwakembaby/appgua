@@ -1,0 +1,19 @@
+{
+  "id": 7,
+  "background": "bg_deep.png",
+  "inventory": [
+    {"type": "betta_fish", "count": 3},
+    {"type": "plant_fern", "count": 2}
+  ],
+  "rules": {
+    "betta_fish": {"target": "betta_fish", "type": "repulsion", "radius": 130}
+  },
+  "description": "",
+  "timeLimit": 45,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 1,
+    "speed": 45,
+    "scareRadius": 85
+  }
+}

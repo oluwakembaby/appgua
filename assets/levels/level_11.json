@@ -1,0 +1,22 @@
+{
+  "id": 11,
+  "background": "bg_coral.png",
+  "inventory": [
+    {"type": "goldfish", "count": 2},
+    {"type": "clown_fish", "count": 2},
+    {"type": "plant_anemone", "count": 1},
+    {"type": "rock_mossy", "count": 2}
+  ],
+  "rules": {
+    "goldfish": {"target": "rock_mossy", "type": "repulsion", "radius": 100},
+    "clown_fish": {"target": "plant_anemone", "type": "attraction", "radius": 75}
+  },
+  "description": "",
+  "timeLimit": 35,
+  "enemy": {
+    "type": "jellyfish",
+    "count": 2,
+    "speed": 60,
+    "scareRadius": 95
+  }
+}
